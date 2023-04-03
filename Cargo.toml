@@ -1,0 +1,19 @@
+[workspace]
+[package]
+name = "zhukoview"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libm = "0.2.6"
+rand = {version="0.8.5", optional = true}
+pingus = {version="0.0.1", optional = true}
+[features]
+default = ["png"]
+rng = ["dep:rand"]
+png = ["dep:pingus"]
+# Set the settings for build scripts and proc-macros.
+[profile.dev]
+opt-level = 3
