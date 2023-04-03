@@ -1,6 +1,6 @@
 [workspace]
 [package]
-name = "zhukoview"
+name = "zhukoview" #TODO: come up with a better name
 version = "0.0.1"
 edition = "2021"
 
