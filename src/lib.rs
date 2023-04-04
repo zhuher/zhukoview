@@ -400,7 +400,7 @@ impl CanvasView {
             }
         }
     }
-    #[cfg(feature = "rng")]
+    #[cfg(all(feature = "rng", feature = "png"))]
     #[inline(always)]
     pub fn add_sprite(
         &self,
