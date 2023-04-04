@@ -2,6 +2,7 @@
 [package]
 name = "zhukoview" #TODO: come up with a better name
 version = "0.0.1"
+license = "MIT"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
