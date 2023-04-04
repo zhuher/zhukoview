@@ -4,7 +4,7 @@ name = "zhukoview" #TODO: come up with a better name
 version = "0.0.1"
 license = "MIT"
 edition = "2021"
-
+description = "A library that provides a 2d 'view' into some 1d N*M u32 container with tools which allow adding lines, circles, triangles, and rectangles within it in the format of ARGB(convertible to RGBA)"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
