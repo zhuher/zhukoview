@@ -1,3 +1,4 @@
+#[cfg(feature = "png")]
 use pingus::*;
 use zhukoview::{AntiAliasing, CanvasView, Colour};
 
@@ -36,6 +37,7 @@ fn main() {
         Colour::Single(0x8000FF00),
     );
     subview.argb32_to_rgba32(&canvas, &mut imgbuf);
+    #[cfg(feature = "png")]
     match create(W, H, &imgbuf, "pingus.png") {
         Ok(_) => println!("Ok!"),
         Err(e) => println!("Nah: {e}"),
